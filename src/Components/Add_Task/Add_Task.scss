@@ -1,0 +1,57 @@
+.add_task_main {  
+    width: 350px;
+    height: 40px;
+    min-height: 40px;
+    display: flex;
+    background-color: white;
+    margin-top: 30px;
+    box-shadow: 1px 1px 6px rgba($color: #000000, $alpha: 0.2);
+    border-radius: 4px;
+
+    .a_t_m_i {
+        font-family: Raleway, 'sans-serif';
+        height: 100%;
+        flex: 1;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 15px;
+        outline: none;
+        border: none;
+        background-color: rgba($color: #000000, $alpha: 0.0);
+    }
+
+    .a_t_m_b {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 3px;
+        width: 80px;
+        height: 34px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Raleway, 'sans-serif';
+        font-weight: 600;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        color: rgb(10, 200, 10);
+        transition: all 150ms ease-in-out;
+        background-color: rgba($color: #000000, $alpha: 0.0);
+
+        &:hover {
+            background-color: rgba(10, 238, 10, 0.12);
+        }
+    }
+}
+
+@media (max-width:500px) {
+
+    .add_task_main {
+        width: 90vw;
+
+        .a_t_m_b {
+            background-color: rgba(10, 238, 10, 0.12);
+        }
+    }
+}
